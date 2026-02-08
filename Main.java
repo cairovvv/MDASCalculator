@@ -14,7 +14,8 @@ public class MainCalcu {
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
-            System.out.println("4. Exit");
+            System.out.println("4. Division");
+            System.out.println("5. Exit");
             System.out.print("Pick a number: ");
             choice = scan.nextInt();
 
@@ -39,14 +40,26 @@ public class MainCalcu {
             switch (choice) {
                 case 1:
                     result = num1 + num2;
-                    System.out.println("Result: " + result);
+                    System.out.println("Sum: " + result);
                     break;
 
                 case 2:
                     result = num1 - num2;
-                    System.out.println("Result: " + result);
+                    System.out.println("Difference: " + result);
                     break;    
+                
+                case 3:
+                    result = num1 * num2;
+                    System.out.println("Product: " + result);
+                    break;
+
+                case 4:
+                    result = num1 / num2;
+                    System.out.println("Quotient: " + result);
+                    break;
+
+            }
         }
+        scan.close();
     }
-}
 }
