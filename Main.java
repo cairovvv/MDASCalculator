@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainCalcu {
+public class MainC{
 
     public static void main(String [] args){
 
